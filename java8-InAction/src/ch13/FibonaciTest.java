@@ -11,7 +11,7 @@ public class FibonaciTest {
 		System.out.println("Iterative elapsed : " + (System.currentTimeMillis() - st));
 		
 		st = System.currentTimeMillis();
-		System.out.println("Streams result : " + fiboStreams(n));
+		System.out.println("Streams result  : " + fiboStreams(n));
 		System.out.println("Streams elapsed : " + (System.currentTimeMillis() - st));
 	}
 	
