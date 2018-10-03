@@ -18,6 +18,11 @@ public class ApplePredicate {
 		
 		System.out.println(isSuitableApple(apple1, expensiveApple));
 		System.out.println(isSuitableApple(apple2, expensiveApple));
+		
+		Predicate<Apple> cheapApple = expensiveApple.negate();
+		
+		System.out.println(isSuitableApple(apple1, cheapApple));
+		System.out.println(isSuitableApple(apple2, cheapApple));
 	}
 	
 	public static boolean isSuitableApple(Apple a, Predicate<Apple> condition) {
